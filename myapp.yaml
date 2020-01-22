@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+spec:
+  containers:
+  - image: ubuntu
+    name: ubuntu
+    stdin: true
+    tty: true
+  - image: redis
+    name: redis
