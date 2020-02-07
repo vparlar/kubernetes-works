@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myubuntu-pod
+spec:
+  imagePullSecrets:
+  - name: dockerhub
+  containers:
+  - image: evolvecybertraining/qa-custom-ubuntu
+    name: ubuntu
+
